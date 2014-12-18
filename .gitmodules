@@ -1,0 +1,3 @@
+[submodule "vendor/gems/spree"]
+	path = vendor/gems/spree
+	url = git@github.com:azclick/spree.git
