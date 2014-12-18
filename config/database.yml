@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: spree_app_development
+  username: <%= ENV['DBUSER'] %>
+  password: <%= ENV['DBPASSWORD'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: spree_app_test
+  username: <%= ENV['DBUSER'] %>
+  password: <%= ENV['DBPASSWORD'] %>
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,5 +85,5 @@ test:
 production:
   <<: *default
   database: spree_app_production
-  username: spree_app
-  password: <%= ENV['SPREE_APP_DATABASE_PASSWORD'] %>
+  username: <%= ENV['DBUSER'] %>
+  password: <%= ENV['DBPASSWORD'] %>
