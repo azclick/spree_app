@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
+  gem 'awesome_print'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', github: 'rails/web-console'
 
@@ -46,3 +46,6 @@ end
 # Spree
 gem 'spree', path: 'vendor/gems/spree'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
+
+gem 'paranoia', github: 'huoxito/paranoia', branch: 'rails-4.2'
+gem 'state_machine', github: 'huoxito/state_machine', branch: 'spree-rails4.2-upgrade'
