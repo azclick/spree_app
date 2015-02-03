@@ -46,13 +46,12 @@ end
 # Spree
 gem 'spree', path: '../plugins/spree'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
-gem 'spree_gateway', github: 'spree/spree_gateway', branch: 'master'
+gem 'spree_correios', path: '../plugins/spree_correios'
+# gem 'spree_gateway', github: 'spree/spree_gateway', branch: 'master'
 # gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: 'master'
 
 # Central point to collect locale data for use in Ruby on Rails.
 gem 'rails-i18n', '~> 4.0.0'
 
-gem 'paranoia', github: 'huoxito/paranoia', branch: 'rails-4.2'
-gem 'state_machine', github: 'huoxito/state_machine', branch: 'spree-rails4.2-upgrade'
-
-gem 'spree_hooks', path: '../spree_web_hooks'
+# gem 'paranoia', github: 'huoxito/paranoia', branch: 'rails-4.2'
+# gem 'state_machine', github: 'huoxito/state_machine', branch: 'spree-rails4.2-upgrade'
